@@ -1,0 +1,17 @@
+.background-photo-title {
+    background-image: url('../images/Product_image.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    /* background-position: center; Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Optional: Ensures it spans full width */
+    height: auto; /* Allows height to scale with the image's aspect ratio */
+    aspect-ratio: 1 / 1; /* Ensures a consistent ratio (adjust as necessary) */
+    position: relative;
+}
+
+.elementor-container.elementor-column-gap-no {
+    position: absolute; /* Allows precise placement within the container */
+    top: 10%; /* Moves the div 20% down from the top of the container */
+    left: 0; /* Optional: Adjust horizontal positioning */
+    width: 100%; /* Optional: Adjust as needed */
+}

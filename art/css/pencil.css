@@ -1,0 +1,34 @@
+.gallery{
+    display: flex;
+    width:100%;
+    flex-direction: column-reverse;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photo{
+    margin: 10px;
+    max-width: 90%;
+}
+
+@media screen and (min-width: 600px) {
+    .photo{
+        max-width: 45%;
+    }
+    .gallery{
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .photo{
+        width: 30%;
+    }
+    .gallery{
+        flex-direction: row;
+    }
+    .ff{
+        width: 45%;
+    }
+}
