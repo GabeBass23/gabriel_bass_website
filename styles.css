@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 145, 48);
+    font-family: Georgia, Cambria, sans-serif
+}
+
+header {
+    position: relative;
+    background-color: transparent;
+    padding: 0px 40px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+nav ul li a:hover{ 
+    color: rgb(255, 145, 48); 
+    /* old color: rgb(255, 119, 0) */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.resume-button {
+    display: inline-block;
+    justify-self: center;
+    align-self: end;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 20px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    grid-row: 3;
+}
+.resume-button:hover {
+    background-color: #0056b3;
+}
+
+.signature {
+    margin: 10px;
+    width: 150px;
+}
+
+.section{
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+.section:nth-child(odd){
+    background-color: #333333 !important;
+    color: white;
+}
+
+h1{
+    margin: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* control enter for media query suggestions */
+
+
+/* for experiment */
+
+/* canvas {
+    border: 1px solid #ccc;
+} */
+
+
+/* for experiment */
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 105vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1; /* Ensure inactive slides are below active ones */
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2; /* Place active slide on top */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* section specific */
+
+#about {
+    display: grid;
+    gap: 0px 50px;
+    width: fill-available;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 2fr 2fr;
+}
+
+#about p {
+    text-align: left;
+}
+
+#about img {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1 /span 3;
+    height: auto;
+}
+
+.proj_container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.proj{
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    transition: margin 0.3s ease-in-out; /* Smooth animation */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.proj div{
+    height: 100px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    text-justify: center;
+    display: block
+}
+
+.proj:hover {
+    margin: 0px;
+}
+
+.bio{
+    font-size: 25px;
+
+}

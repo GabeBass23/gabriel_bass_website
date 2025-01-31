@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://www.gabriel-bass.com/art">
-  <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Bass</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>You are being redirected. If you are not redirected, <a href="https://www.gabriel-bass.com/art">click here</a>.</p>
+    <div class="slideshow">
+        <div class="slide active" style="background-image: url('assets/RedRocks.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/back_wall1.jpeg');"></div>
+        <div class="slide" style="background-image: url('assets/rock_climbing.jpeg');"></div>
+        <div class="slide" style="background-image: url('assets/dunes.jpeg');"></div>
+        <div class="slide" style="background-image: url('assets/sunset_silhouette.jpeg');"></div>
+        <div class="slide" style="background-image: url('assets/camp.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/canyon.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/boats1.jpeg');"></div>
+        <div class="slide" style="background-image: url('assets/cave_kayak.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/grand_canyon.jpg');"></div>
+        <header>
+            <a href="">
+                <img class="signature" src="assets/signature.svg" alt="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#programming_portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="art" target="_blank">Art</a></li>
+                    <li><a href="gettagripz" target="_blank">GettaGripz</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="section" id="about">
+        <div>
+            <h1>About Gabe</h1>
+            <h2>Programmer | Creator | Artist | Nature Lover | Rock Climbing Enthusiast </h2>
+        </div>
+        <img src="assets/artist_at_work.JPG">
+        <div class="bio">
+            <p>Gabe is a software developer with experience in both front-end and back-end technologies. He has built and published multiple Chrome extensions and is currently developing a Gmail-related web app. His work focuses on integrating APIs, automating workflows, and enhancing user experience through well-crafted solutions.</p>
+
+            <p>He emphasizes efficiency and innovation, leveraging AI to fill knowledge gaps and accelerate development. Gabe has experience with MongoDB, Oracle databases, and various web technologies, ensuring scalable and maintainable applications.</p>
+
+            <p>Beyond his personal projects, he is passionate about building practical, user-friendly tools and refining his expertise in modern web development. He is currently working on a portfolio website to showcase his art, his product 'GettaGripz,' and his education and experience.</p>
+
+            <p>In his free time, he enjoys designing in Fusion 360, working on creative projects, and staying up-to-date with the latest tech trends. He also has an interest in automation, digital product development, and optimizing workflows through AI and smart tooling.</p>
+
+            <p><strong>Web Technologies</strong></p>
+            <p><strong>Extensive Experience:</strong> JavaScript, Chrome Extensions, HTML, CSS, MongoDB, Gmail API, and Git.</p>
+            <p><strong>Versed:</strong> Oracle, React, and automation tools.</p>
+            <p><strong>Previously Explored:</strong> Various front-end and back-end frameworks.</p>
+
+            
+        </div>
+        <a href="assets/Resume_Gabriel_Bass.pdf" target="_blank" class="resume-button">View Gabe's Professional Resume</a>
+    </div>
+    
+    <div class="section" id="programming_portfolio">
+        <h1>Programming Portfolio</h1>
+        <div class="proj_container">
+            <div class="proj">
+                <div>hi</div>
+            </div>
+            <div class="proj">
+                <div>jsldfkjklsdf</div>
+            </div>
+            <div class="proj">
+                <div>sfdfsdfsdfs</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="section" id="contact">
+        <h1>Contact</h1>
+    </div>
+    <!-- Additional sections here -->
+    <footer>
+        <p>&copy; Gabriel Bass. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+        let lastUpdateTime = Date.now(); // Track the last update time
+        const interval = 8000; // 3 seconds per slide
+        
+        function showNextSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+            lastUpdateTime = Date.now();
+        }
+        
+        function runSlideshow() {
+            const now = Date.now();
+            const elapsed = now - lastUpdateTime;
+        
+            // Check if enough time has passed
+            if (elapsed >= interval) {
+                showNextSlide();
+            }
+        
+            // Continue animating using requestAnimationFrame
+            requestAnimationFrame(runSlideshow);
+        }
+        
+        // Start the slideshow
+        runSlideshow();
+        
+
+    </script>
+
+
+
 </body>
 </html>
