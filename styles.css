@@ -1,15 +1,32 @@
+/* ====== general ====== */
+
 body {
     font-family: "Google Sans", Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 145, 48);
-    /* font-family: Georgia, Cambria, sans-serif */
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ====== page top ====== */
 
 header {
     position: relative;
     background-color: transparent;
-    padding: 0px 40px 0px 20px;
+    padding: 0 40px 0 20px;
     display: flex;
     justify-content: space-between;
     z-index: 1000;
@@ -18,6 +35,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -40,50 +58,34 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a:hover{ 
-    color: rgb(255, 145, 48); 
-    /* old color: rgb(255, 119, 0) */
+nav ul li a:hover {
+    color: rgb(255, 145, 48);
 }
 
-.cta-button {
+/* ====== buttons ====== */
+
+.cta-button, .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    background-color: #007BFF;
 }
 
-.cta-button:hover {
+.cta-button:hover, .resume-button:hover {
     background-color: #0056b3;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
 .resume-button {
-    display: inline-block;
     justify-self: center;
     align-self: end;
-    padding: 10px 20px;
     font-size: 16px;
     height: 20px;
-    color: white;
-    background-color: #007bff;
-    text-decoration: none;
-    border-radius: 5px;
     border: none;
     cursor: pointer;
     grid-row: 3;
     margin-bottom: 80px;
-}
-.resume-button:hover {
-    background-color: #0056b3;
 }
 
 .signature {
@@ -91,35 +93,18 @@ footer {
     width: 150px;
 }
 
-.section{
+/* ====== sections ====== */
+
+.section {
     text-align: center;
     color: white;
     padding: 80px;
 }
 
-.section:nth-child(odd){
-    background-color: #333333 !important;
+.section:nth-child(odd) {
+    background-color: #333 !important;
     color: white;
 }
-
-h1{
-    margin: 0px;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-/* control enter for media query suggestions */
-
-
-/* for experiment */
-
-/* canvas {
-    border: 1px solid #ccc;
-} */
-
-
-/* for experiment */
 
 .slideshow {
     position: relative;
@@ -137,27 +122,21 @@ h1{
     background-attachment: fixed;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    z-index: 1; /* Ensure inactive slides are below active ones */
+    z-index: 1;
 }
 
 .slide.active {
     opacity: 1;
-    z-index: 2; /* Place active slide on top */
+    z-index: 2;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-
-/* section specific */
+/* ====== about ====== */
 
 #about {
-    padding: 80px 30px 0px 80px;
+    padding: 80px 30px 0 80px;
     height: min-content;
     display: grid;
-    gap: 0px 50px;
+    gap: 0 50px;
     width: fill-available;
     grid-template-rows: auto auto auto;
     grid-template-columns: 2fr 2fr;
@@ -171,68 +150,84 @@ html {
     align-self: end;
     width: 100%;
     grid-column: 2;
-    grid-row: 1 /span 3;
+    grid-row: 1 / span 3;
     height: auto;
 }
+
+.bio {
+    font-size: 25px;
+}
+
+/* ====== programming projects ====== */
 
 .proj_container {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.proj{
+.proj {
     background-color: white;
     height: 320px;
     border-radius: 25px;
-    margin: 10px 0px;
-    transition: margin 0.3s ease-in-out; /* Smooth animation */
+    margin: 10px 0px 30px;
+    transition: margin 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0px;
+    padding: 0;
 }
 
-.proj div{
+.proj div {
     width: 400px;
     height: 120px;
     background-color: #007bff;
     color: white;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0 0 25px 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.proj img{
+.proj img {
     overflow: hidden;
     width: 400px;
     height: 200px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px 25px 0 0;
 }
 
-.proj p{
+.proj p {
     font-size: 23px;
     padding: 20px;
 }
 
 .proj:hover {
-    margin: 0px;
-}
-
-.bio{
-    font-size: 25px;
-
-}
-
-a {
-    text-decoration: none;
+    margin: 0px 0px 40px;
 }
 
 #programming_portfolio {
     scroll-margin-top: -3px;
+}
+
+#art_site {
+    width: 380px;
+    height: auto;
+    margin-bottom: 10px;
+    justify-self: start;
+    align-self: center;
+    border-radius: 25px 25px 0 0;
+}
+
+/* ====== page bottom ====== */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
 #contact {
@@ -251,28 +246,16 @@ a {
 #contact img {
     width: 30px;
     height: 30px;
-    
 }
 
 #contact img:hover .bg {
-    fill: orange; /* Change to your desired hover color */
+    fill: orange;
 }
 
-#contact a{
+#contact a {
     margin-bottom: 8px;
 }
 
 #contact a:first-child {
     margin-bottom: 5px;
-}
-
-
-#art_site{
-    width: 380px;
-    height: auto;
-    margin-bottom: 10px;
-    justify-self: start;
-    align-self: center;
-    border-radius: 25px 25px 0px 0px;
-    
 }
