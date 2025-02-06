@@ -54,6 +54,10 @@ nav ul {
     }
 }
 
+@media (max-width: 620px) {
+    /* instead of headings switch to tripple line ========= */
+}
+
 nav ul li {
     margin: 0 15px;
 }
@@ -163,6 +167,20 @@ nav ul li a:hover {
 
 .bio {
     font-size: 25px;
+}
+
+@media screen and (max-width: 850px) {
+    #about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        padding: 80px 30px 0 30px;
+    }
+
+    #about img {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    
 }
 
 /* ====== programming projects ====== */
