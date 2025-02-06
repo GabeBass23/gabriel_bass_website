@@ -144,13 +144,19 @@ nav ul li a:hover {
 /* ====== about ====== */
 
 #about {
-    padding: 80px 30px 0 80px;
+    padding: 30px 30px 0 80px;
     height: min-content;
     display: grid;
-    gap: 0 50px;
+    gap: 0px 50px;
     width: fill-available;
-    grid-template-rows: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
     grid-template-columns: 2fr 2fr;
+}
+
+#about::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #about p {
@@ -158,28 +164,37 @@ nav ul li a:hover {
 }
 
 #about img {
+    float: right;
     align-self: end;
     width: 100%;
-    grid-column: 2;
     grid-row: 1 / span 3;
+    grid-column: 2;
     height: auto;
 }
 
 .bio {
+    grid-column: 1;
     font-size: 25px;
 }
 
-@media screen and (max-width: 850px) {
-    #about {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        padding: 80px 30px 0 30px;
+.bio_head {
+    grid-column: 1;
+    padding-top: 50px;
+}
+
+.bio_container{
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    /* .bio_head {
+        grid-column: 1 / span 2;
     }
 
     #about img {
-        grid-column: 1;
-        grid-row: 4;
-    }
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    } */
     
 }
 
@@ -249,6 +264,10 @@ nav ul li a:hover {
 /* ====== page bottom ====== */
 
 footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -256,7 +275,6 @@ footer {
 }
 
 #contact {
-    justify-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -265,7 +283,7 @@ footer {
     width: 200px;
     height: 50px;
     border-radius: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #contact img {
@@ -284,3 +302,70 @@ footer {
 #contact a:first-child {
     margin-bottom: 5px;
 }
+
+
+@media screen and (max-width: 610px) {
+    .section, #about {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+/* ================ new ================== */
+
+/* Style for the navigation menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+  }
+  
+  /* Hide the toggle button by default (for larger screens) */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Media query for screens 480px or less */
+  @media (max-width: 600px) {
+    /* Show the menu toggle button */
+    .menu-toggle {
+        color: white;
+        font-weight: bold;
+        text-align: start;
+        font-size: 30px;
+        justify-self: center;
+        align-self: center;
+        display: block;
+    }
+  
+    /* Stack the navigation items vertically and hide by default */
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    /* When active, display the nav-menu */
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    /* Optional: style adjustments for mobile */
+    .nav-menu li {
+      margin: 10px 0;
+    }
+
+    nav{
+        display: none;
+    }
+  }

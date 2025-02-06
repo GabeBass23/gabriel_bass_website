@@ -22,6 +22,7 @@
             <a href="">
                 <img class="signature" src="assets/signature.png" alt="logo">
             </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -35,11 +36,10 @@
     </div>
 
     <div class="section" id="about">
-        <div>
+        <div class="bio_head">
             <h1>About Gabe</h1>
             <h2>Programmer | Creator | Artist | Nature Lover | Rock Climbing Enthusiast </h2>
         </div>
-        <img src="assets/senior_picture_png1.png" alt="Gabe">
         <div class="bio">
             <p>Gabe is a software developer with experience in both front-end and back-end technologies. He has built and published multiple Chrome extensions and is currently developing a Gmail-related web app. His work focuses on integrating APIs, automating workflows, and enhancing user experience through well-crafted solutions.</p>
 
@@ -54,8 +54,8 @@
             <!-- <p><strong>Versed:</strong> Oracle, React, and automation tools.</p>
             <p><strong>Previously Explored:</strong> Various front-end and back-end frameworks.</p> -->
 
-            
         </div>
+        <img src="assets/senior_picture_png1.png" alt="Gabe">
         <a href="assets/Resume_Gabriel_Bass.pdf" target="_blank" class="resume-button">View Gabe's Professional Resume</a>
     </div>
     
@@ -134,6 +134,17 @@
         
         // Start the slideshow
         runSlideshow();
+
+
+        // Select the toggle button and the navigation menu
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle the 'active' class on the nav menu when the button is clicked
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
         
 
     </script>
