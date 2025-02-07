@@ -186,15 +186,29 @@ nav ul li a:hover {
     width: 50%;
 }
 
-@media screen and (max-width: 1200px) {
-    /* .bio_head {
+#languages{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 450px;
+    height: auto;
+}
+
+#languages img {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1275px) {
+    .bio_head {
         grid-column: 1 / span 2;
     }
 
     #about img {
         grid-column: 2;
         grid-row: 2 / span 2;
-    } */
+    }
     
 }
 
@@ -369,3 +383,5 @@ footer {
         display: none;
     }
   }
+
+  
