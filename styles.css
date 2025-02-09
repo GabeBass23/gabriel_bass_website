@@ -588,6 +588,7 @@ footer {
         background: none;
         border: none;
         font-size: 50px;
+        text-align: right;
         cursor: pointer;
         color: #fff;
         margin-bottom: 15px;
