@@ -546,6 +546,10 @@ footer {
         align-self: center;
         display: block;
     }
+
+    #programming_portfolio h1 {
+        font-size: 40px;
+    }
   
     /* Stack the navigation items vertically and hide by default */
     .nav-menu {
@@ -580,6 +584,7 @@ footer {
         border: none;
         font-size: 50px;
         text-align: right;
+        justify-self: end;
         cursor: pointer;
         color: #fff;
         margin-bottom: 15px;
