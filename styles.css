@@ -517,15 +517,6 @@ footer {
 
 
   /* ================================== */
-
-  .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #fff;
-  }
   
   nav ul {
     list-style: none;
@@ -551,7 +542,7 @@ footer {
         font-weight: bold;
         text-align: start;
         font-size: 30px;
-        justify-self: center;
+        justify-self: end;
         align-self: center;
         display: block;
     }
