@@ -583,6 +583,7 @@ footer {
         background: none;
         border: none;
         font-size: 50px;
+        width: 60px;
         text-align: right;
         justify-self: end;
         cursor: pointer;
