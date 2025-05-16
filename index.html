@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Bass</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="assets/palette_spinner.png">
+
+    <link rel="icon" href="/assets/signature.png">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- <div id="loader">
-        <img src="assets/signature.png" alt="logo">
-    </div> -->
-
+    <div id="loader">
+        <img src="assets/palette_spinner.png" alt="Loading..." class="spinner">
+      </div>
+      
 
     <div id="content">
         <div class="slideshow">
@@ -124,6 +129,19 @@
         </footer>
     
         <script>
+            var loader = document.getElementById("loader");
+
+            window.addEventListener("load", function() {
+                setTimeout(function() {
+                  $(loader).hide();
+                }, 2000);
+              });
+            
+
+
+            // slideshow part
+
+
             const slides = document.querySelectorAll('.slide');
             let currentIndex = 0;
             let lastUpdateTime = Date.now(); // Track the last update time
