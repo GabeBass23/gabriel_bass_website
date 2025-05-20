@@ -135,7 +135,8 @@ ul{
 }
 
 li{
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Montserrat', "Palatino Linotype", Roboto, Arial, sans-serif;
     color: white;
 }
 
@@ -161,8 +162,12 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+#purchase{
+  padding: 20px 5%;
 }
 
 #paypal-container-AW2NV5648RPS2{
@@ -235,37 +240,14 @@ header img{
     display: block;
 }
 
-
-/* #about{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-}
-
-.testimonials{
-  position: relative;
-  top: -200px;
-  width: 50%;
-  height: 500px;
-  background-color: orange;
-
-
-}
-
-.product_images{
-  position: relative;
-  width: 50%;
-  height: 500px;
-  background-color: black;
-
-} */
-
 #about {
   position: relative;
   overflow: hidden;
   height: 1700px;
+}
+
+#about h2{
+  font-size: 40px;
 }
 
 .testimonials {
@@ -433,20 +415,21 @@ section h2{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 300px;
+  margin-top: 400px;
   margin-left: 20%;
+  width: 60%;
   color: white;
 }
 
 
 
 /* ksldjfkldsajfl;kdsjflkdsjf;lsdj;lfjds;lkfasd */
-.product-page {
+.product_page {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 0rem;
   max-width: 1200px;
-  margin: auto;
 }
 
 .thumbnails {
@@ -525,5 +508,14 @@ section h2{
   z-index: 10;
 }
 
+.review_text{
+  font-size: 25px;
+  font-style: italic;
+  margin: 50px 0px;
+}
 
+.reviewer{
+  font-size: 25px;
+  font-weight: bold;
+}
 

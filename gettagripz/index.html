@@ -68,6 +68,8 @@
                         <h5>TESTIMONIALS</h5>
                         <h2>WHAT OUR <br>CUSTOMERS SAY</h2>
                         <div class="divider divider_white"><span></span></div>
+                        <p class="review_text">I got this device to work on my spelunking strength. Unfortunately I crushed the solid wood in my incredibly strong bat hands. I was also dissapointed it didn't come in black. 2 stars</p>
+                        <span class="reviewer">Batman</span>
                     </div>
                 </div>
             </div>
@@ -88,7 +90,7 @@
         <section id="purchase">
             <h2>Get a Grip... Get a GettaGripz!</h2>
             <div class="purchase"> 
-                <div class="product-page">
+                <div class="product_page">
                     <div class="thumbnails">
                         <img src="images/grip.png" alt="Thumbnail 1">
                         <img src="images/Product_image.jpg" alt="Thumbnail 3">
@@ -113,41 +115,7 @@
 
 
                         //this is the zoom functionality
-                        const lens = document.getElementById('zoomLens');
-                        const img = document.getElementById('mainDisplay');
-                        const wrapper = document.querySelector('.zoom-wrapper');
-
-                        wrapper.addEventListener('mousemove', moveLens);
-                        wrapper.addEventListener('mouseenter', () => lens.style.display = 'block');
-                        wrapper.addEventListener('mouseleave', () => lens.style.display = 'none');
-
-                        function moveLens(e) {
-                            const zoomLevel = 2; // or whatever your zoom level is
-
-                            const rect = wrapper.getBoundingClientRect();
-                            const imgWidth = img.offsetWidth;
-                            const imgHeight = img.offsetHeight;
-
-                            const lensWidth = lens.offsetWidth;
-                            const lensHeight = lens.offsetHeight;
-
-                            let x = e.clientX - rect.left - lensWidth / 2;
-                            let y = e.clientY - rect.top - lensHeight / 2;
-
-                            // Clamp x and y so zoom doesn't exceed image bounds
-                            const maxX = imgWidth - lensWidth / zoomLevel;
-                            const maxY = imgHeight - lensHeight / zoomLevel;
-
-                            x = Math.max(0, Math.min(x, maxX));
-                            y = Math.max(0, Math.min(y, maxY));
-
-                            lens.style.left = `${x}px`;
-                            lens.style.top = `${y}px`;
-
-                            lens.style.backgroundImage = `url('${img.src}')`;
-                            lens.style.backgroundSize = `${imgWidth * zoomLevel}px ${imgHeight * zoomLevel}px`;
-                            lens.style.backgroundPosition = `-${x * zoomLevel}px -${y * zoomLevel}px`;
-                        }
+                        
                     </script>
                 </div>
 
