@@ -1,455 +1,194 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>GettaGripz – Portable grip-strength trainer</title>
-        <meta name="robots" content="noindex,follow">
-        <link rel="dns-prefetch" href="//fonts.googleapis.com">
-        <link rel="dns-prefetch" href="//s.w.org">
-        <link rel="stylesheet" href="css2/existing.css">
-        <link rel="stylesheet" href="css2/new.css">
+    <title>GettaGripz – Portable grip-strength trainer</title>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-        <!-- <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-2BM4094Z6X&amp;cx=c&amp;_slc=1"></script> -->
-        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-P9FT69"></script>
-        <script type="text/javascript">
-            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ld-wp.template-help.com\/wordpress_free\/23520\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.1.1"}};
-            !function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-        </script>
-        <script src="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/js/wp-emoji-release.min.js?ver=5.1.1" type="text/javascript" defer=""></script>
-        <link rel="stylesheet" id="wp-block-library-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1" type="text/css" media="all">
-        <link rel="stylesheet" id="contact-form-7-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.1" type="text/css" media="all">
-        <link rel="stylesheet" id="font-awesome-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
-        <link rel="stylesheet" id="worky-theme-style-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/themes/workylite/style.css?ver=1.0.0" type="text/css" media="all">
-        <link rel="stylesheet" id="cx-google-fonts-worky-css" href="//fonts.googleapis.com/css?family=Montserrat%3A300%2C700%7CRoboto%3A400%2C300%2C500%2C900&amp;subset=latin&amp;ver=5.1.1" type="text/css" media="all">
-        <!-- <link rel="stylesheet" id="elementor-icons-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=4.3.0" type="text/css" media="all"> -->
-        <link rel="stylesheet" id="elementor-animations-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.5.13" type="text/css" media="all">
-        <link rel="stylesheet" id="elementor-frontend-css" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.5.13" type="text/css" media="all">
-        <!-- swapped out the stylesheet below -->
-        <link rel="stylesheet" id="elementor-frontend-inline-css" href="css2/elements.css">
-        <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7COswald%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.1.1" type="text/css" media="all">
-        <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-        <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-        <link rel="https://api.w.org/" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-json/">
-        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ld-wp.template-help.com/wordpress_free/23520/xmlrpc.php?rsd">
-        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/wlwmanifest.xml"> 
-        <link rel="alternate" type="application/json+oembed" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fld-wp.template-help.com%2Fwordpress_free%2F23520%2F">
-        <link rel="alternate" type="text/xml+oembed" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fld-wp.template-help.com%2Fwordpress_free%2F23520%2F&amp;format=xml">
-        <link rel="icon" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/uploads/2019/04/cropped-favicon-32x32.png" sizes="32x32">
-        <link rel="icon" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/uploads/2019/04/cropped-favicon-192x192.png" sizes="192x192">
-        <link rel="apple-touch-icon-precomposed" href="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/uploads/2019/04/cropped-favicon-180x180.png">
-        <meta name="msapplication-TileImage" content="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/uploads/2019/04/cropped-favicon-270x270.png">
-    </head>
-    
-    <body class="home page-template page-template-page-templates page-template-fullwidth-content page-template-page-templatesfullwidth-content-php page page-id-8 top-panel-invisible layout-fullwidth blog- elementor-default elementor-page elementor-page-8" data-elementor-device-mode="desktop">
-    <div id="page" class="site">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-        <header id="masthead" class="site-header ">
-            <a href="https://www.templatemonster.com/wordpress-themes/worky-architectural-bureau-multipurpose-modern-elementor-wordpress-theme-76333.html" class="monst2-link">
-                <!-- <img class="small-monst2" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/themes/workylite/assets/banners/monstroid2-small.png" alt="monstroid2"> -->
-            </a>   
-    
-            <div class="site-header__wrap container">
-                <div class="space-between-content">
-                    <div class="site-branding">
-                        <img src="images/logo.png" class="logo" alt="">
+    <link rel="icon" href="/icons/grip.png">
+
+    <link rel="stylesheet" href="ah.css">
+
+    <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="AQ2FPBPATXU3Q"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="GettaGripz Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#purchase">Purchase</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container gap">
+                <div class="row">
+                  <div class="column half">
+                    <div class="content animated-right">
+                      <h5 class="subtitle">About GettaGripz</h5>
+                      <h2 class="title">The ultimate portable grip-strength device</h2>
+                      <div class="divider"><span></span></div>
                     </div>
-                    <nav id="site-navigation" class="main-navigation mobile-menu-open" role="navigation">
-                        <button class="mobile-menu-toggle-button" style="display: none;">
-                            <i class="mobile-menu-close fa fa-bars" aria-hidden="true" style="display: none;"></i>
-                            <i class="mobile-menu-open fa fa-times" aria-hidden="true" style="display: block;"></i>
-                        </button>
-                        <div class="main-navigation-inner">
-                            <ul id="main-menu" class="menu" style="display: block;">
-                                <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-22">
-                                    <a href="https://ld-wp.template-help.com/wordpress_free/23520/" aria-current="page">HOME</a>
-                                </li>
-                                <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21">
-                                    <a href="#About">ABOUT</a>
-                                </li>
-                                <!-- <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
-                                    <a href="">SERVICES</a>
-                                </li> -->
-                                <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18">
-                                    <a href="#ContactUs">CONTACT US</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav><!-- #site-navigation -->
+                  </div>
+                  <div class="column half">
+                    <div class="content animated-left">
+                      <!-- <p class="paragraph">Title of the paragraph</p>
+                      <p class="paragraph">
+                        <a href="https://youtube.com/shorts/rxbEtpaNN1Y">Tutorial video</a>
+                      </p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="about">
+            <div class="grip_photos">
+
+                <div class="grip_photo">
+                </div>
+                <div class="grip_photo">
+
+                </div>
+                <div class="grip_photo">
+
                 </div>
             </div>
-        </header><!-- #masthead -->
-
-<div id="content" class="site-content ">
-    <article id="post-8" class="post-8 page type-page status-publish hentry">		
-        <div data-elementor-type="post" data-elementor-id="8" class="elementor elementor-8" data-elementor-settings="[]">
-        <div class="elementor-inner">
-        <div class="elementor-section-wrap">
-        <section class="elementor-element background-photo-title elementor-section-height-min-height elementor-section-content-middle 
-        elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" 
-        data-id="bdc61ec" data-element_type="section" >
-        <div class="elementor-background-overlay"></div>
-        <div class="elementor-container elementor-column-gap-no">
             
-        <div class="elementor-row">
-        <!-- <div class="elementor-element elementor-element-cc3646a elementor-column elementor-col-100 elementor-top-column" data-id="cc3646a" data-element_type="column"> -->
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-3fdfd82 elementor-widget elementor-widget-heading" data-id="3fdfd82" data-element_type="widget" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Get a grip</h2></div>
-        </div>
-        <div class="elementor-element elementor-element-c9417bc elementor-widget elementor-widget-text-editor" data-id="c9417bc" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <!-- used to be in the div below: Best Ideas – Best Solution – Best Result -->
-        <div class="elementor-text-editor elementor-clearfix"></div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-cbb5de5 elementor-align-center elementor-widget elementor-widget-button" data-id="cbb5de5" data-element_type="widget" data-widget_type="button.default">
-        <div class="elementor-widget-container">
-        <!-- <div class="elementor-button-wrapper">
-        <a href="https://ld-wp.template-help.com/wordpress_free/23520/about/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-        <span class="elementor-button-content-wrapper">
-        <span class="elementor-button-text">view more</span>
-        </span>
-        </a>
-        </div> -->
-        </div>
-        </div>
-        <!-- </div> -->
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <section class="elementor-element elementor-element-46dc31bf elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" id="About" data-id="46dc31bf" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-        <div class="elementor-element elementor-element-7fb97a98 elementor-column elementor-col-50 elementor-top-column" data-id="7fb97a98" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-14d56e7 elementor-widget elementor-widget-heading animated fadeInRight" data-id="14d56e7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h5 class="elementor-heading-title elementor-size-default">About GettaGripz</h5>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-538b817f elementor-widget elementor-widget-heading animated fadeInLeft" data-id="538b817f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h2 class="elementor-heading-title elementor-size-default">The ultimate portable grip-strength device</h2>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-18b57201 animated-slow elementor-widget elementor-widget-divider animated fadeInRight" data-id="18b57201" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="divider.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-divider">
-        <span class="elementor-divider-separator"></span>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-2ddaae7 elementor-column elementor-col-50 elementor-top-column" data-id="2ddaae7" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-10623144 elementor-widget elementor-widget-text-editor" data-id="10623144" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix"></div>
-        <!-- <p>Title of the paragraph</p> this is where I need to write a paragraph -->
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-4e8da247 elementor-widget elementor-widget-text-editor" data-id="4e8da247" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix"><a href="https://youtube.com/shorts/rxbEtpaNN1Y">Tutorial video</a></div>
-        <!-- this is where i need to write the content or body of the paragraph <p>Paragraph body</p> -->
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <section class="elementor-element elementor-element-3864ebd0 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="3864ebd0" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-        <div class="elementor-element elementor-element-5c62f5e6 elementor-column elementor-col-33 elementor-top-column animated fadeInLeft" data-id="5c62f5e6" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-e7a365d elementor-align-center elementor-widget elementor-widget-button" data-id="e7a365d" data-element_type="widget" data-widget_type="button.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-button-wrapper">
-        <a href="" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-        <span class="elementor-button-content-wrapper">
-        <span class="elementor-button-text">At Home</span>
-        </span>
-        </a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-7a805b44 elementor-column elementor-col-33 elementor-top-column animated fadeInDown" data-id="7a805b44" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInDown&quot;}">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-a5307ad elementor-align-center elementor-widget elementor-widget-button" data-id="a5307ad" data-element_type="widget" data-widget_type="button.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-button-wrapper">
-        <a href="" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-        <span class="elementor-button-content-wrapper">
-        <span class="elementor-button-text">At the Crag</span>
-        </span>
-        </a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-73cd257f elementor-column elementor-col-33 elementor-top-column animated fadeInRight" data-id="73cd257f" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-979df34 elementor-align-center elementor-widget elementor-widget-button" data-id="979df34" data-element_type="widget" data-widget_type="button.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-button-wrapper">
-        <a href="" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-        <span class="elementor-button-content-wrapper">
-        <span class="elementor-button-text">At the Gym</span>
-        </span>
-        </a>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <section class="elementor-element elementor-element-73d12977 elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="73d12977" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-        <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-        <div class="elementor-element elementor-element-80bcbe7 elementor-column elementor-col-50 elementor-top-column" data-id="80bcbe7" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-7d0b3c7b elementor-widget elementor-widget-spacer" data-id="7d0b3c7b" data-element_type="widget" data-widget_type="spacer.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-spacer">
-        <div class="elementor-spacer-inner"></div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-6edb5ed7 elementor-widget elementor-widget-heading animated fadeInRight" data-id="6edb5ed7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h5 class="elementor-heading-title elementor-size-default">features</h5>		</div>
-        </div>
-        <div class="elementor-element elementor-element-759009da elementor-widget elementor-widget-heading animated fadeInLeft" data-id="759009da" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h2 class="elementor-heading-title elementor-size-default">5 Crimps <br>
-        2 Pinches</h2>		</div>
-        </div>
-        <div class="elementor-element elementor-element-545790df animated-slow elementor-widget elementor-widget-divider animated fadeInRight" data-id="545790df" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="divider.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-divider">
-        <span class="elementor-divider-separator"></span>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-49d33cb3 elementor-widget elementor-widget-text-editor" data-id="49d33cb3" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix"><img src="images/grip.png"></div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-694ed43b elementor-widget elementor-widget-button" data-id="694ed43b" data-element_type="widget" data-widget_type="button.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-button-wrapper">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDllpPSP3-p7SDjFbfG7DNOJ3plPErbQnbUNULnLVPdqQb1A/viewform?usp=dialog" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-        <span class="elementor-button-content-wrapper">
-        <span class="elementor-button-text">ORDER TODAY</span>
-        </span>
-        </a>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-2d4c986b elementor-widget elementor-widget-spacer" data-id="2d4c986b" data-element_type="widget" data-widget_type="spacer.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-spacer">
-        <div class="elementor-spacer-inner"></div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-5d7a8a3a elementor-column elementor-col-50 elementor-top-column" data-id="5d7a8a3a" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-background-overlay"></div>
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-54b87d59 elementor-view-default elementor-widget elementor-widget-icon" data-id="54b87d59" data-element_type="widget" data-widget_type="icon.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-icon-wrapper">
-        <div class="elementor-icon">
-        <i class="fa fa-quote-right" aria-hidden="true"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-403d51d4 elementor-widget elementor-widget-heading" data-id="403d51d4" data-element_type="widget" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h5 class="elementor-heading-title elementor-size-default">Testimonials</h5>		</div>
-        </div>
-        <div class="elementor-element elementor-element-754d4c4a elementor-widget elementor-widget-heading" data-id="754d4c4a" data-element_type="widget" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h2 class="elementor-heading-title elementor-size-default">What our <br>
-        customers say</h2>		</div>
-        </div>
-        <div class="elementor-element elementor-element-100cd068 elementor-widget elementor-widget-divider" data-id="100cd068" data-element_type="widget" data-widget_type="divider.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-divider">
-        <span class="elementor-divider-separator"></span>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-f223197 elementor-widget elementor-widget-text-editor" data-id="f223197" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix">I can't make it to the climbing gym every day so I got a GettaGripz to work on my finger strength at home. I can feel my tendons becoming stronger! </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-1dc591b elementor-widget elementor-widget-text-editor" data-id="1dc591b" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix"><b>Seth</b>, amateur rock climber</div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <!-- first one -->
-         
-        <section id="ContactUs" class="elementor-element elementor-element-58631911 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="58631911" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="elementor-container elementor-column-gap-no">
-        <div class="elementor-row">
-        <div class="elementor-element elementor-element-23b3e15b elementor-column elementor-col-50 elementor-top-column" data-id="23b3e15b" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-631bd0bc elementor-widget elementor-widget-heading animated fadeInRight" data-id="631bd0bc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h5 class="elementor-heading-title elementor-size-default">Let’s Get in Touch</h5>		</div>
-        </div>
-        <div class="elementor-element elementor-element-620983a2 elementor-widget elementor-widget-heading animated fadeInRight" data-id="620983a2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}" data-widget_type="heading.default">
-        <div class="elementor-widget-container">
-        <h2 class="elementor-heading-title elementor-size-default">Contact details</h2>		</div>
-        </div>
-        <div class="elementor-element elementor-element-54314adc animated-slow elementor-widget elementor-widget-divider animated fadeInLeft" data-id="54314adc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="divider.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-divider">
-        <span class="elementor-divider-separator"></span>
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-276ee3be elementor-widget elementor-widget-text-editor" data-id="276ee3be" data-element_type="widget" data-widget_type="text-editor.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-text-editor elementor-clearfix"><p>Phone: <a href="tel:+5551234567">(231)638-8224</a><br>E-mail: <a href="mailto:gabebass23@gmail.com">gabebass23@gmail.com</a><br>Opening hours:<br>Monday — Thursday 10:00 – 23:00<br>Friday — Sunday 10:00 – 19:00</p></div>
-        </div>
-        </div>
-        <!-- this is the second one -->
-        </div>
-        </div>
-        </div>
-        <div class="elementor-element elementor-element-4b04b489 elementor-column elementor-col-50 elementor-top-column" data-id="4b04b489" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-ede8185 elementor-widget elementor-widget-shortcode" data-id="ede8185" data-element_type="widget" data-widget_type="shortcode.default">
-        <div class="elementor-widget-container">
-        <div class="elementor-shortcode"><div role="form" class="wpcf7" id="wpcf7-f5-p8-o1" lang="en-US" dir="ltr">
-        <div class="screen-reader-response"></div>
-        <form action="/wordpress_free/23520/#wpcf7-f5-p8-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-        <div style="display: none;">
-        <input type="hidden" name="_wpcf7" value="5">
-        <input type="hidden" name="_wpcf7_version" value="5.1.1">
-        <input type="hidden" name="_wpcf7_locale" value="en_US">
-        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-p8-o1">
-        <input type="hidden" name="_wpcf7_container_post" value="8">
-        <input type="hidden" name="g-recaptcha-response" value="">
-        </div>
-        <p><label><br>
-        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" fdprocessedid="eorpr"></span> </label></p>
-        <p><label><br>
-        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your E-mail" fdprocessedid="dskrg"></span> </label></p>
-        <p><label><br>
-        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your Message"></textarea></span> </label></p>
-        <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" fdprocessedid="ydnfx"><span class="ajax-loader"></span></p>
-        <div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </section>
-        <img src="images/bottom_banner.png" class="attachment-full size-full" alt="">
-        <!-- <section class="elementor-element elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="e20b287" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"> -->
-        <!-- <div class="elementor-container elementor-column-gap-no">
-        <div class="elementor-row">
-        <div class="elementor-element elementor-element-0b9b66c elementor-column elementor-col-100 elementor-top-column" data-id="0b9b66c" data-element_type="column">
-        <div class="elementor-column-wrap  elementor-element-populated">
-        <div class="elementor-widget-wrap">
-        <div class="elementor-element elementor-element-f3daf03 elementor-widget elementor-widget-image" data-id="f3daf03" data-element_type="widget" data-widget_type="image.default">
-        <div class="elementor-widget-container"> -->
-        
-        <!-- </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div> -->
-        <!-- </section> -->
-        </div>
-        </div>
-        </div>
-    </article><!-- #post-8 -->
-</div><!-- #content -->
-    
-        <footer id="colophon" class="site-footer ">    
-            <div class="site-footer__wrap container">
-                <div class="space-between-content">
-                    <div class="footer-copyright">
-                        © 2024 Gabriel Bass | Multipurpose Theme design by  
-                        <a href="https://www.templatemonster.com/">TemplateMonster</a>
+            <div class="testimonials">
+                <div class="color_cover">
+                    <div class="color_cover_inner">
+                        <h5>TESTIMONIALS</h5>
+                        <h2>WHAT OUR <br>CUSTOMERS SAY</h2>
+                        <div class="divider divider_white"><span></span></div>
                     </div>
                 </div>
-            </div><!-- .container -->
-        </footer><!-- #colophon -->
-    </div><!-- #page -->
+            </div>
+            <div class="product_images">
+                
+                <div class="features">
+                    <div class="feature_cover">
+                        <h5>FEATURES</h5>
+                        <h2>4 CRIMPS <br> 2 PINCHES</h2>
+                        <div class="divider"><span></span></div>
+                        <img class="grip_img" src="images/grip.png" alt="Grip">
+                        <a href="https://youtube.com/shorts/rxbEtpaNN1Y" target="_blank" class="tutorial_button">TUTORIAL VIDEO</a>
+                    </div>
+                    
+                    
+                </div>
+
+                
+            
+            </div>
+            
+        </section>
+        <section id="purchase">
+            <h2>Get a Grip... Get a GettaGripz!</h2>
+            <div class="purchase"> 
+                <div class="product-page">
+                    <div class="thumbnails">
+                        <img src="images/grip.png" alt="Thumbnail 1">
+                        <img src="images/product_image.jpg" alt="Thumbnail 3">
+                    </div>
+
+                    <div class="main-image">
+                        <div class="zoom-wrapper">
+                            <img id="mainDisplay" src="images/grip.png" alt="Main Product">
+                            <div id="zoomLens"></div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const thumbs = document.querySelectorAll('.thumbnails img');
+                        const mainDisplay = document.getElementById('mainDisplay');
+
+                        thumbs.forEach(img => {
+                            img.addEventListener('mouseenter', () => {
+                            mainDisplay.src = img.src;
+                            });
+                        });
+
+
+                        //this is the zoom functionality
+                        const lens = document.getElementById('zoomLens');
+                        const img = document.getElementById('mainDisplay');
+                        const wrapper = document.querySelector('.zoom-wrapper');
+
+                        wrapper.addEventListener('mousemove', moveLens);
+                        wrapper.addEventListener('mouseenter', () => lens.style.display = 'block');
+                        wrapper.addEventListener('mouseleave', () => lens.style.display = 'none');
+
+                        function moveLens(e) {
+                            const zoomLevel = 2; // or whatever your zoom level is
+
+                            const rect = wrapper.getBoundingClientRect();
+                            const imgWidth = img.offsetWidth;
+                            const imgHeight = img.offsetHeight;
+
+                            const lensWidth = lens.offsetWidth;
+                            const lensHeight = lens.offsetHeight;
+
+                            let x = e.clientX - rect.left - lensWidth / 2;
+                            let y = e.clientY - rect.top - lensHeight / 2;
+
+                            // Clamp x and y so zoom doesn't exceed image bounds
+                            const maxX = imgWidth - lensWidth / zoomLevel;
+                            const maxY = imgHeight - lensHeight / zoomLevel;
+
+                            x = Math.max(0, Math.min(x, maxX));
+                            y = Math.max(0, Math.min(y, maxY));
+
+                            lens.style.left = `${x}px`;
+                            lens.style.top = `${y}px`;
+
+                            lens.style.backgroundImage = `url('${img.src}')`;
+                            lens.style.backgroundSize = `${imgWidth * zoomLevel}px ${imgHeight * zoomLevel}px`;
+                            lens.style.backgroundPosition = `-${x * zoomLevel}px -${y * zoomLevel}px`;
+                        }
+                    </script>
+                </div>
+
+                
+                <div class="purchase-container">
+                    <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+                    <script>
+                        cartPaypal.Cart({ id: "pp-view-cart" })
+                    </script>
+                    <paypal-add-to-cart-button data-id="A7QTPKKLHKBQJ"></paypal-add-to-cart-button>
+                    <script>
+                        cartPaypal.AddToCart({ id: "A7QTPKKLHKBQJ" })
+                    </script>
+                </div>
+
+            </div>
+            
+        </section>
+        <img src="images/bottom_banner.png" alt="Hand" class="bottom_banner">
+    </main>
+
+    <footer>
+        <h2 class="footer_label">Connect With Us</h2>
+
+        <div id="connect">
+            <a href="https://mail.google.com/mail/?fs=1&tf=cm&to=getagettagripz@gmail.com" target="_blank">
+                <img src="icons/email.svg" alt="Email">
+            </a>
+            <a href="https://www.instagram.com/getta_gripz/" target="_blank">
+                <img src="icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@gettagripz" target="_blank">
+                <img src="icons/tiktok.svg" alt="TikTok">
+            </a>
+        </div>
+
+        <p>&copy; GettaGripz. All rights reserved.</p>
+    </footer>
     
-    <script type="text/javascript">
-    /* <![CDATA[ */
-    var wpcf7 = {"apiSettings":{"root":"https:\/\/ld-wp.template-help.com\/wordpress_free\/23520\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
-    /* ]]> */
-    </script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.1"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/themes/workylite/assets/js/responsive-menu.js?ver=1.0.0"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/themes/workylite/assets/js/jquery.ui.totop.min.js?ver=1.2.0"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/themes/workylite/assets/js/theme-script.js?ver=1.0.0"></script><a href="#" id="toTop" style="display: none;"><span></span></a>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/js/wp-embed.min.js?ver=5.1.1"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.5.13"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.1"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"></script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6"></script>
-    <script type="text/javascript">
-    var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.5.13","urls":{"assets":"https:\/\/ld-wp.template-help.com\/wordpress_free\/23520\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_enable_lightbox_in_editor":"yes"}},"post":{"id":8,"title":"HOME","excerpt":""}};
-    </script>
-    <script type="text/javascript" src="https://ld-wp.template-help.com/wordpress_free/23520/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.5.13"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
-    
-    <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
-    
-    <script type="text/javascript" id="" charset="">(function(){var b=document.location.search.split("aff\x3d")[1];if(b){var d=document.querySelectorAll("a"),c;for(c=0;c<d.length;c++){var a=d[c];0==a.href.indexOf("https://www.templatemonster.com")&&(0<a.href.indexOf("?")?a.href=a.href+"\x26aff\x3d"+b:a.href=a.href+"?aff\x3d"+b)}}b=document.location.search.split("i\x3d")[1];var e=document.location.search.split("pr_code\x3d")[1];if(b&&e)for(b=b.split("\x26")[0],d=document.querySelectorAll("a"),c=0;c<d.length;c++)a=d[c],0==a.href.indexOf("https://www.templatemonster.com")&&
-    (a.href="https://www.templatehelp.com/preset/cart.php?act\x3dadd\x26templ\x3d"+b+"\x26pr_code\x3d"+e)})();</script>
-    <span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
+</html>
