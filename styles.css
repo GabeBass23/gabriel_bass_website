@@ -628,3 +628,24 @@ footer {
 .bio h2{
     padding-top: 60px;
 }
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen loader */
+    width: 100%;
+    background-color: white; /* Optional */
+    z-index: 9999;
+  }
+  
+  .spinner {
+    width: auto; /* Adjust as needed */
+    height: 100px;
+    animation: spin 6s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
