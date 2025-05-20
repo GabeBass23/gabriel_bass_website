@@ -136,7 +136,12 @@ ul{
 
 li{
     font-size: 40px;
-    font-family: "TimesNewRoman", Times, serif;
+    color: white;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
 }
 
 section{
@@ -269,7 +274,7 @@ header img{
   left: 50%;
   width: 50vw;
   height: 1100px;
-  background-image: url(images/testimonial_backdrop.jpg);
+  background-image: url(../images/testimonial_backdrop.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,6 +360,12 @@ header img{
   width: 350px;
   height: 500px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  color: white;
 
 }
 
