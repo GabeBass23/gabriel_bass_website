@@ -154,7 +154,7 @@ section{
 }
 
 .purchase_container{
-    justify-self: right;
+    align-self: flex-start;
     width: 300px;
 }
 
@@ -530,7 +530,7 @@ section h2{
 
 @media screen and (max-width: 1050px) {
   .purchase_container{
-    justify-self: center;
+    align-self: center;
   }
   .purchase{
       flex-direction: column;
