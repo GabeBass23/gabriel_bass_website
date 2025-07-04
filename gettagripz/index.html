@@ -95,17 +95,14 @@
             <div class="purchase"> 
                 <div class="product_page">
                     <div class="thumbnails">
-                        <img src="images/WhatYouGet.png" alt="Thumbnail 3">
-                        <img src="images/grip.png" alt="Thumbnail 1">
+                        <img src="images/WhatYouGet.png" alt="What You Get">
+                        <img src="images/grip.png" alt="Grip Image">
                     </div>
 
-                    <div class="main-image">
-                        <div class="zoom-wrapper">
-                            <img id="mainDisplay" src="images/WhatYouGet.png" alt="Main Product">
-                            <div id="zoomLens"></div>
-                        </div>
+                    <div class="displayed_image">
+                        <img id="mainDisplay" src="images/WhatYouGet.png" alt="Main Product">
                     </div>
-
+                    
                     <script>
                         const thumbs = document.querySelectorAll('.thumbnails img');
                         const mainDisplay = document.getElementById('mainDisplay');
@@ -113,14 +110,14 @@
                         thumbs.forEach(img => {
                             img.addEventListener('mouseenter', () => {
                             mainDisplay.src = img.src;
+                            mainDisplay.alt = img.alt;
                             });
                         });
-
-
-                        //this is the zoom functionality
                         
                     </script>
                 </div>
+
+                    
 
                 
                 <div class="purchase_container">

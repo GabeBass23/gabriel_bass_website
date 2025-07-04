@@ -161,9 +161,9 @@ section{
 .purchase{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    height: auto;
 }
 
 #purchase{
@@ -276,7 +276,7 @@ header img{
 
 .bottom_banner{
   width: 100%;
-  margin: 80px 0px 30px 0px;
+  margin: 20px 0px 40px 0px;
 }
 
 .color_cover{
@@ -399,9 +399,24 @@ section h2{
 .product_page {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 2rem;
   padding: 2rem 0rem;
-  max-width: 1200px;
+  height: 500px;
+}
+
+#mainDisplay {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain; /* Ensures full image fits */
+  display: block;      /* Removes inline spacing */
+}
+
+.displayed_image{
+  height: 500px;
+  width: auto;
 }
 
 .thumbnails {
@@ -455,7 +470,6 @@ section h2{
 /* zooming tests */
 
 .zoom-wrapper {
-  position: relative;
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -465,17 +479,6 @@ section h2{
 .zoom-wrapper img {
   width: 100%;
   display: block;
-}
-
-#zoom-lens {
-  position: absolute;
-  border: 2px solid #fcb034;
-  width: 200px;
-  height: 200px;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  display: none;
-  z-index: 10;
 }
 
 .review_text{
@@ -548,8 +551,26 @@ section h2{
   .purchase_container{
     align-self: center;
   }
+
+  .product_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .thumbnails{
+    flex-direction: row;
+    justify-content: center;
+  }
   .purchase{
       flex-direction: column;
+      height: auto;
+      width: 100%;
+  }
+
+  .grip_photo{
+    display: none;
   }
 }
 
