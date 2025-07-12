@@ -49,18 +49,46 @@
               </div>
         </section>
         <section id="about">
-            <div class="grip_photos">
 
-                <div class="at_home grip_photo">
-                    At home
+            <div class="carousel-container">
+                <!-- <button class="arrow left" onclick="scrollCarousel(-1)">&#8592;</button> -->
+                <div class="grip_photos carousel-track">
+                    <div class="at_home grip_photo carousel-item">
+                        At home
+                    </div>
+                    <div class="at_gym grip_photo carousel-item">
+                        At the gym
+                    </div>
+                    <div class="at_crag grip_photo carousel-item">
+                        At the crag
+                    </div>
                 </div>
-                <div class="at_gym grip_photo">
-                    At the gym
-                </div>
-                <div class="at_crag grip_photo">
-                    At the crag
-                </div>
+                <!-- <button class="arrow right" onclick="scrollCarousel(1)">&#8594;</button> -->
             </div>
+
+            <script>
+                let currentIndex = 0;
+
+                function scrollCarousel(direction) {
+                    const track = document.querySelector('.carousel-track');
+                    const items = document.querySelectorAll('.carousel-item');
+                    const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+                    const itemWidth = items[0].offsetWidth;
+
+                    const visibleCount = Math.floor(containerWidth / itemWidth);
+                    const maxIndex = items.length - visibleCount;
+
+                    currentIndex = Math.min(Math.max(currentIndex + direction, 0), maxIndex);
+                    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+                }
+
+                window.addEventListener('resize', () => {
+                    // Reset index and scroll position on resize
+                    currentIndex = 0;
+                    document.querySelector('.carousel-track').style.transform = 'translateX(0)';
+                });
+            </script>
+
 
             
             <div class="testimonials">

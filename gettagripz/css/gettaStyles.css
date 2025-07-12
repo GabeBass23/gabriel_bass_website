@@ -229,7 +229,7 @@ footer {
 
 .footer_label{
     color: white;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 header img{
@@ -493,6 +493,14 @@ section h2{
   font-weight: bold;
 }
 
+/* ======================================================= */
+
+
+
+
+
+/* ============================MEDIA QUERIES================================== */
+
 
 @media screen and (max-width: 1200px) {
 
@@ -569,7 +577,13 @@ section h2{
       width: 100%;
   }
 
-  .grip_photo{
+  .at_crag{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .at_gym {
     display: none;
   }
 }
@@ -585,6 +599,10 @@ section h2{
     position: initial;
     width: 100%;
     height: auto;
+  }
+
+  .grip_photos {
+    margin-bottom: 50px;
   }
 
   .feature_cover {
@@ -606,3 +624,6 @@ section h2{
     left: 0;
   }
 }
+
+
+
