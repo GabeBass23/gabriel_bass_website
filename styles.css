@@ -392,9 +392,9 @@ footer {
   } */
   
   /* Initially hide the main content */
-  /* #content {
+  #content {
     display: none;
-  } */
+  }
 
   
 
